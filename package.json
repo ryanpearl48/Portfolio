@@ -26,6 +26,7 @@
     "typescript": "5.0.2"
   },
   "devDependencies": {
+    "@types/prop-types": "^15.7.5",
     "supabase": "^1.50.2"
   }
 }
