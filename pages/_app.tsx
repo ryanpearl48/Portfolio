@@ -1,19 +1,17 @@
-import type { AppProps } from 'next/app'
-import { NextUIProvider, createTheme } from '@nextui-org/react'
+import type { AppProps } from 'next/app';
+import { NextUIProvider, createTheme } from '@nextui-org/react';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
-import { createBrowserSupabaseClient } from '@supabase/auth-helpers-nextjs'
-import { SessionContextProvider, Session } from '@supabase/auth-helpers-react'
-import { useState } from 'react'
-
+import { createBrowserSupabaseClient } from '@supabase/auth-helpers-nextjs';
+import { SessionContextProvider, Session } from '@supabase/auth-helpers-react';
+import { useState } from 'react';
+import { SSRProvider } from 'react-bootstrap';
 
 const lightTheme = createTheme({
   type: 'light',
-  // Change Colors
 })
 
 const darkTheme = createTheme({
   type: 'dark',
-  // Change Colors
 })
 
 export default function App({ Component,
@@ -25,6 +23,7 @@ export default function App({ Component,
   const [supabaseClient] = useState(() => createBrowserSupabaseClient())
 
   return (
+  <SSRProvider>
     <NextThemesProvider
     defaultTheme="system"
     attribute="class"
@@ -38,9 +37,10 @@ export default function App({ Component,
         supabaseClient={supabaseClient}
         initialSession={pageProps.initialSession}
         >
-          <Component {...pageProps} />
+            <Component {...pageProps} />
         </SessionContextProvider>
       </NextUIProvider>
     </NextThemesProvider>
+  </SSRProvider>
   )
 }

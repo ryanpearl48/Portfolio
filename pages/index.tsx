@@ -3,7 +3,6 @@ import DropDown from "@/components/Dropdown";
 import { useTheme as useNextTheme } from 'next-themes';
 import { Switch, useTheme } from '@nextui-org/react';
 
-
 export const metadata = {
   title: 'Home Page'
 }

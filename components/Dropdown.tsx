@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Dropdown } from "@nextui-org/react";
 
-
 export default function DropDown() {
   return (
     <>
