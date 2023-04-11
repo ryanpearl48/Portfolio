@@ -5,6 +5,7 @@ import { createBrowserSupabaseClient } from '@supabase/auth-helpers-nextjs';
 import { SessionContextProvider, Session } from '@supabase/auth-helpers-react';
 import { useState } from 'react';
 import { SSRProvider } from 'react-bootstrap';
+import Nav from '@/components/Nav';
 import '../styles/globals.css'
 
 const lightTheme = createTheme({
@@ -38,6 +39,7 @@ export default function App({ Component,
         supabaseClient={supabaseClient}
         initialSession={pageProps.initialSession}
         >
+          <Nav/>
             <Component {...pageProps} />
         </SessionContextProvider>
       </NextUIProvider>

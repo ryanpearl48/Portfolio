@@ -7,7 +7,6 @@ export const metadata = {
 const Home = () => {
   return (
     <>
-      <Nav />
     </>
   )
 }
