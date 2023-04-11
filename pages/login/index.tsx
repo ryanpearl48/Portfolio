@@ -24,7 +24,7 @@ const Login = () => {
       ) : (
         <Account session={session} />
       )}
-      <Link href='/'>Return Home</Link>
+      <Link href='/' className='relative flex justify-between items-center max-w-[500px] w-full m-auto pt-4'>Return Home</Link>
     </div>
   )
 }

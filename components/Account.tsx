@@ -76,6 +76,7 @@ export default function Account({ session }: { session: Session }) {
   }
 
   return (
+    <div className='relative flex justify-between items-center max-w-[500px] w-full m-auto pt-4'>
     <div className="form-widget">
       <div>
         <label htmlFor="email">Email</label>
@@ -115,6 +116,7 @@ export default function Account({ session }: { session: Session }) {
           Sign Out
         </button>
       </div>
+    </div>
     </div>
   )
 }

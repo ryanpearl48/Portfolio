@@ -5,6 +5,7 @@ import { createBrowserSupabaseClient } from '@supabase/auth-helpers-nextjs';
 import { SessionContextProvider, Session } from '@supabase/auth-helpers-react';
 import { useState } from 'react';
 import { SSRProvider } from 'react-bootstrap';
+import '../styles/globals.css'
 
 const lightTheme = createTheme({
   type: 'light',
