@@ -1,6 +1,5 @@
 import { Link } from '@nextui-org/react'
 
-
 export const metadata = {
   title: 'Portfolio',
   description: 'Portfolio page for Ryan Pearl, showcasing multiple projects'

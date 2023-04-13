@@ -1,6 +1,6 @@
 import { Card, Text, Link, Grid } from "@nextui-org/react";
 
-const NextUI = () => {
+const NextUICard = () => {
   return (
     <Card css={{ p: "$6", mw: "400px" }}>
       <Card.Header>
@@ -31,13 +31,13 @@ const NextUI = () => {
           icon
           color="primary"
           target="_blank"
-          href="https://github.com/nextui-org/nextui"
+          href="https://nextui.org/docs/guide/getting-started"
         >
-          Visit source code on GitHub.
+          NextUI Documentation
         </Link>
       </Card.Footer>
     </Card>
   )
 }
 
-export default NextUI;
+export default NextUICard;

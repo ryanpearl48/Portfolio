@@ -1,29 +1,29 @@
 import { Card, Text, Link, Grid } from "@nextui-org/react";
 
-const TypescriptCard = () => {
+const NextCard = () => {
   return (
     <Card css={{ p: "$6", mw: "400px" }}>
       <Card.Header>
         <img
-          alt="Typescript logo"
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
+          alt="Next logo"
+          src="https://cdn.worldvectorlogo.com/logos/next-js.svg"
           width="34px"
           height="34px"
         />
         <Grid.Container css={{ pl: "$6" }}>
           <Grid xs={12}>
             <Text h4 css={{ lineHeight: "$xs" }}>
-              Typescript
+              Next
             </Text>
           </Grid>
           <Grid xs={12}>
-            <Text css={{ color: "$accents8" }}>typescriptlang.org</Text>
+            <Text css={{ color: "$accents8" }}>nextjs.org</Text>
           </Grid>
         </Grid.Container>
       </Card.Header>
       <Card.Body css={{ py: "$2" }}>
         <Text>
-          Typescript is a type based language, building on the fundamentals of Javascript.
+          Next.js is the "React Framwork for the Web", it makes full-stack applications sleek and easy to make!
         </Text>
       </Card.Body>
       <Card.Footer>
@@ -31,13 +31,13 @@ const TypescriptCard = () => {
           icon
           color="primary"
           target="_blank"
-          href="https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html"
+          href="https://nextjs.org/docs/getting-started"
         >
-          Typescript Documentation
+          Next JS Documentation
         </Link>
       </Card.Footer>
     </Card>
   )
 }
 
-export default TypescriptCard;
+export default NextCard;

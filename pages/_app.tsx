@@ -36,6 +36,7 @@ export default function App({ Component,
 
   return (
   <SSRProvider>
+    <NextUIProvider>
     <NextThemesProvider
     defaultTheme="system"
     attribute="class"
@@ -44,7 +45,6 @@ export default function App({ Component,
       dark: darkTheme.className
     }}
     >
-      <NextUIProvider>
         <SessionContextProvider
         supabaseClient={supabaseClient}
         initialSession={pageProps.initialSession}
@@ -52,8 +52,8 @@ export default function App({ Component,
           <Nav/>
             <Component {...pageProps} />
         </SessionContextProvider>
-      </NextUIProvider>
     </NextThemesProvider>
+      </NextUIProvider>
   </SSRProvider>
   )
 }

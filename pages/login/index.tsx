@@ -2,7 +2,6 @@ import { Auth } from '@supabase/auth-ui-react'
 import { ThemeSupa } from '@supabase/auth-ui-shared'
 import { useSession, useSupabaseClient } from '@supabase/auth-helpers-react'
 import Account from '../../components/Account'
-import { Link } from '@nextui-org/react'
 
 export const metadata = {
   title: 'Login Page'
