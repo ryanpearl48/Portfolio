@@ -15,7 +15,7 @@ const Nav = () => {
       <Navbar isBordered variant={'sticky'}>
         <Navbar.Brand>
           <Text b color="inherit" hideIn="sm">
-            Ryan Pearl
+            Portfolio Playground
           </Text>
         </Navbar.Brand>
         <Navbar.Content hideIn="xs">
@@ -29,6 +29,7 @@ const Nav = () => {
               <Dropdown.Item key="login"><Link href="/login">Login</Link></Dropdown.Item>
               : <Dropdown.Item key="login"><Link href="/login">My Profile</Link></Dropdown.Item>}
               <Dropdown.Item key='portfolio'><Link href='/portfolio'>Portfolio</Link></Dropdown.Item>
+              <Dropdown.Item key='card'><Link href='/cards'>Cards</Link></Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
 
