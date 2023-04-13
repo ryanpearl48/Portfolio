@@ -13,7 +13,7 @@ const Login = () => {
   const supabase = useSupabaseClient()
 
   return (
-    <div className="container" style={{ padding: '50px 0 100px 0' }}>
+    <div className='w-full flex justify-center align-middle'>
       {!session ? (
         <Auth
         supabaseClient={supabase}
@@ -24,7 +24,6 @@ const Login = () => {
       ) : (
         <Account session={session} />
       )}
-      <Link href='/' className='relative flex justify-between items-center max-w-[500px] w-full m-auto pt-4'>Return Home</Link>
     </div>
   )
 }

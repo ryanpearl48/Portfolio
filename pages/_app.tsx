@@ -10,10 +10,20 @@ import '../styles/globals.css'
 
 const lightTheme = createTheme({
   type: 'light',
+  theme: {
+    colors: {
+      background: '#d9d9d9',
+    },
+  }
 })
 
 const darkTheme = createTheme({
   type: 'dark',
+  theme: {
+    colors: {
+      background: '#1d1d1d',
+    },
+  }
 })
 
 export default function App({ Component,
