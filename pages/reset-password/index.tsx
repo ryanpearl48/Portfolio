@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { Button } from '@nextui-org/react';
 import { supabase } from '@/lib/supabase-client';
 
-
 const ResetPassword = () => {
   const [password, setPassword] = useState('');
   const [loading] = useState(false);

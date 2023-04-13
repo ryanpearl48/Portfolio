@@ -1,14 +1,13 @@
 import { Link } from "@nextui-org/react";
-import { useState } from "react";
 import { Dropdown } from "@nextui-org/react";
 import { useSession } from '@supabase/auth-helpers-react';
 import { useTheme as useNextTheme } from 'next-themes';
-import { Switch, useTheme, Navbar, Button, Text } from '@nextui-org/react';
+import { Switch, useTheme, Navbar, Text } from '@nextui-org/react';
 
 const Nav = () => {
   const session = useSession();
   const { setTheme } = useNextTheme();
-  const { isDark, type } = useTheme();
+  const { isDark } = useTheme();
 
   return (
     <div className="flex items-center">

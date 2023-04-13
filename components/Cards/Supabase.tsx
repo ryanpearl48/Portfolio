@@ -1,6 +1,6 @@
 import { Card, Text, Link, Grid } from "@nextui-org/react";
 
-const Supabase = () => {
+const SupabaseCard = () => {
   return (
     <Card css={{ p: "$6", mw: "400px" }}>
       <Card.Header>
@@ -40,4 +40,4 @@ const Supabase = () => {
   )
 }
 
-export default Supabase;
+export default SupabaseCard;
