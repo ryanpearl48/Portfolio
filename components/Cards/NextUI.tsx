@@ -28,6 +28,7 @@ const NextUICard = () => {
       </Card.Body>
       <Card.Footer>
         <Link
+          icon
           color="primary"
           target="_blank"
           href="https://nextui.org/docs/guide/getting-started"
