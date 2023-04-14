@@ -1,8 +1,7 @@
-import { Link } from "@nextui-org/react";
-import { Dropdown } from "@nextui-org/react";
+import React from "react";
 import { useSession } from '@supabase/auth-helpers-react';
 import { useTheme as useNextTheme } from 'next-themes';
-import { Switch, useTheme, Navbar, Text } from '@nextui-org/react';
+import { Switch, useTheme, Navbar, Text, Link, Dropdown } from '@nextui-org/react';
 
 const Nav = () => {
   const session = useSession();

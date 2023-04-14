@@ -1,4 +1,5 @@
 import { Card, Text, Link, Grid } from "@nextui-org/react";
+import React from "react";
 
 const TailwindCard = () => {
   return (
