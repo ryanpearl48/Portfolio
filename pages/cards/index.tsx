@@ -1,3 +1,4 @@
+import React from "react";
 import TailwindCard from "@/components/Cards/Tailwind";
 import SupabaseCard from "@/components/Cards/Supabase";
 import TypescriptCard from "@/components/Cards/TypeScript";

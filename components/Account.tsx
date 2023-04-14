@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useUser, useSupabaseClient, Session } from '@supabase/auth-helpers-react'
 import { Database } from '../types/supabase'
 type Profiles = Database['public']['Tables']['profiles']['Row']
