@@ -28,7 +28,6 @@ const NextCard = () => {
       </Card.Body>
       <Card.Footer>
         <Link
-          icon
           color="primary"
           target="_blank"
           href="https://nextjs.org/docs/getting-started"

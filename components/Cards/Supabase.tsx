@@ -28,7 +28,6 @@ const SupabaseCard = () => {
       </Card.Body>
       <Card.Footer>
         <Link
-          icon
           color="primary"
           target="_blank"
           href="https://supabase.com/docs"
