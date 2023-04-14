@@ -5,7 +5,7 @@ const NextUICard = () => {
     <Card css={{ p: "$6", mw: "400px" }}>
       <Card.Header>
         <img
-          alt="nextui logo"
+          alt="NextUI logo"
           src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
           width="34px"
           height="34px"

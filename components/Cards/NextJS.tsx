@@ -4,12 +4,12 @@ const NextCard = () => {
   return (
     <Card css={{ p: "$6", mw: "400px" }}>
       <Card.Header>
-        <img
+        {/* <img
           alt="Next logo"
           src="https://cdn.worldvectorlogo.com/logos/next-js.svg"
           width="34px"
           height="34px"
-        />
+        /> */}
         <Grid.Container css={{ pl: "$6" }}>
           <Grid xs={12}>
             <Text h4 css={{ lineHeight: "$xs" }}>
