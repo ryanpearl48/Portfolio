@@ -28,6 +28,7 @@ const Nav = () => {
               : <Dropdown.Item key="login"><Link href="/login">My Profile</Link></Dropdown.Item>}
               <Dropdown.Item key='portfolio'><Link href='/portfolio'>Portfolio</Link></Dropdown.Item>
               <Dropdown.Item key='card'><Link href='/cards'>Cards</Link></Dropdown.Item>
+              <Dropdown.Item key='about-ne'><Link href='/about-me'>About Me</Link></Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
 
