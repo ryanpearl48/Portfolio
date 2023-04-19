@@ -7,7 +7,7 @@ import NextCard from "@/components/Cards/NextJS";
 
 const CardsPage = () => {
   return (
-    <div className="flex my-5 space-x-7 flex-wrap jus">
+    <div className="flex my-4 space-x-7 flex-wrap justify-center flex-row pt-2">
       <NextCard />
       <TypescriptCard />
       <SupabaseCard />
