@@ -9,7 +9,7 @@ const Nav = () => {
   const { isDark } = useTheme();
 
   return (
-    <div className="flex items-center">
+    <div className="flex items-center flex-wrap">
       <Navbar isBordered variant={'sticky'}>
         <Navbar.Brand>
           <Text b color="inherit" hideIn="sm">
