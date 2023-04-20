@@ -1,4 +1,4 @@
-import { Link, Card, Table } from '@nextui-org/react'
+import { Link, Card, Table, Collapse } from '@nextui-org/react'
 
 export const metadata = {
   title: 'Portfolio',
@@ -7,40 +7,41 @@ export const metadata = {
 
 const Portfolio = () => {
   return (
-    <div>
-      <h1 className='relative flex justify-center items-center max-w-[500px] w-full m-auto pt-4'>Here's some links to my projects!</h1>
-      <Card className='relative flex flex-col justify-between items-center max-w-[500px] w-full m-auto pt-4'>
-        <Card.Header>AI Cookbook</Card.Header>
-        <Table
-      aria-label="Example table with static content"
-      css={{
-        height: "auto",
-        minWidth: "100%",
-      }}
-    >
-      <Table.Header>
-        <Table.Column>NAME</Table.Column>
-        <Table.Column>ROLE</Table.Column>
-      </Table.Header>
-      <Table.Body>
-        <Table.Row key="1">
-          <Table.Cell>Ryan Pearl</Table.Cell>
-          <Table.Cell>Developer</Table.Cell>
-        </Table.Row>
-        <Table.Row key="2">
-          <Table.Cell>Cody DiBella</Table.Cell>
-          <Table.Cell>Developer</Table.Cell>
-        </Table.Row>
-        <Table.Row key="3">
-          <Table.Cell>Jay Yuan</Table.Cell>
-          <Table.Cell>Developer</Table.Cell>
-        </Table.Row>
-        <Table.Row key="4">
-          <Table.Cell>Ben Villafranca</Table.Cell>
-          <Table.Cell>Developer</Table.Cell>
-        </Table.Row>
-      </Table.Body>
-    </Table>
+    <div className='relative flex flex-col justify-between items-center max-w-[500px] w-full m-auto pt-4'>
+      <Collapse.Group splitted>
+        <Collapse title='AI Cookbook' expanded shadow>
+        <Card className='relative flex flex-col justify-between items-center max-w-[500px] w-full m-auto pt-4'>
+          <Card.Header>AI Cookbook</Card.Header>
+          <Table
+          aria-label="Example table with static content"
+          css={{
+          height: "auto",
+          minWidth: "100%",
+          }}
+          >
+          <Table.Header>
+           <Table.Column>NAME</Table.Column>
+           <Table.Column>ROLE</Table.Column>
+         </Table.Header>
+          <Table.Body>
+            <Table.Row key="1">
+              <Table.Cell>Ryan Pearl</Table.Cell>
+              <Table.Cell>Developer</Table.Cell>
+            </Table.Row>
+            <Table.Row key="2">
+              <Table.Cell>Cody DiBella</Table.Cell>
+              <Table.Cell>Developer</Table.Cell>
+            </Table.Row>
+            <Table.Row key="3">
+              <Table.Cell>Jay Yuan</Table.Cell>
+              <Table.Cell>Developer</Table.Cell>
+            </Table.Row>
+            <Table.Row key="4">
+              <Table.Cell>Ben Villafranca</Table.Cell>
+              <Table.Cell>Developer</Table.Cell>
+            </Table.Row>
+           </Table.Body>
+          </Table>
         <Card.Body>Myself and three teammates Ben Villafranca, Cody DiBella, and Jay Yuan created AI Cookbook
           Which utilizes Next.js, Supabase, MaterialUI, and Spoonacular/OpenAI API's.
           The main idea of the website is that you can take what ingredients you have around the house
@@ -51,8 +52,10 @@ const Portfolio = () => {
         AI CookBook
         </Link>
       </Card>
+    </Collapse>
 
-      <Card className='relative flex flex-col justify-between items-center max-w-[500px] w-full m-auto pt-4'>
+      <Collapse title='Vanity Vans' expanded shadow>
+      <Card className='relative flex flex-col justify-between items-center max-w-[500px] w-full m-auto  mt-1 pt-4'>
         <Card.Header>Vanity Vans</Card.Header>
         <Table
       aria-label="Example table with static content"
@@ -92,8 +95,8 @@ const Portfolio = () => {
         Vanity Vans
         </Link>
       </Card>
-
-
+      </Collapse>
+      </Collapse.Group>
     </div>
   )
 }
