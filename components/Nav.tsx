@@ -9,28 +9,28 @@ const Nav = () => {
   const { isDark } = useTheme();
 
   return (
-    <div className="flex items-center flex-wrap">
-      <Navbar isBordered variant={'sticky'}>
+    <div>
+      <Navbar isBordered variant="floating">
         <Navbar.Brand>
           <Text b color="inherit" hideIn="sm">
-            Portfolio Playground
+              Portfolio Playground
           </Text>
         </Navbar.Brand>
-        <Navbar.Content hideIn="xs">
-          <Navbar.Link isActive href="/">Return Home</Navbar.Link>
+        <Navbar.Content enableCursorHighlight hideIn="xs" variant='highlight'>
+          <Navbar.Link  href="/">Return Home</Navbar.Link>
         </Navbar.Content>
         <Navbar.Content>
           <Dropdown>
-            <Dropdown.Button flat>Settings</Dropdown.Button>
+            <Dropdown.Button shadow>Settings</Dropdown.Button>
               <Dropdown.Menu aria-label="Static Actions">
               {!session ?
-              <Dropdown.Item key="login"><Link href="/login">Login</Link></Dropdown.Item>
-              : <Dropdown.Item key="login"><Link href="/login">My Profile</Link></Dropdown.Item>}
-              <Dropdown.Item key='portfolio'><Link href='/portfolio'>Portfolio</Link></Dropdown.Item>
-              <Dropdown.Item key='card'><Link href='/cards'>Cards</Link></Dropdown.Item>
-              <Dropdown.Item key='about-ne'><Link href='/about-me'>About Me</Link></Dropdown.Item>
+              <Dropdown.Item textValue="Login" key="login"><Link href="/login">Login</Link></Dropdown.Item>
+              : <Dropdown.Item textValue="My Profile" key="login"><Link href="/login">My Profile</Link></Dropdown.Item>}
+              <Dropdown.Item textValue="Portfolio" withDivider key='portfolio'><Link href='/portfolio'>Portfolio</Link></Dropdown.Item>
+              <Dropdown.Item textValue="Cards" key='card'><Link href='/cards'>Cards</Link></Dropdown.Item>
+              <Dropdown.Item textValue="About Me" key='about-me'><Link href='/about-me'>About Me</Link></Dropdown.Item>
             </Dropdown.Menu>
-          </Dropdown>
+            </Dropdown>
 
         <div>
           <Switch

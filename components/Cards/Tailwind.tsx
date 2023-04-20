@@ -30,7 +30,6 @@ const TailwindCard = () => {
       </Card.Body>
       <Card.Footer>
         <Link
-          icon
           color="primary"
           target="_blank"
           href="https://v2.tailwindcss.com/docs"
