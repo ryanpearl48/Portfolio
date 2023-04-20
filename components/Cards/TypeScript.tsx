@@ -29,7 +29,6 @@ const TypescriptCard = () => {
       </Card.Body>
       <Card.Footer>
         <Link
-          icon
           color="primary"
           target="_blank"
           href="https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html"
