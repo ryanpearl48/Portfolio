@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useUser, useSupabaseClient, Session } from '@supabase/auth-helpers-react'
 import { Database } from '../types/supabase'
+import { Input, Button } from '@nextui-org/react'
 type Profiles = Database['public']['Tables']['profiles']['Row']
 
 export default function Account({ session }: { session: Session }) {
@@ -76,45 +77,71 @@ export default function Account({ session }: { session: Session }) {
   }
 
   return (
-    <div className='relative flex justify-between items-center max-w-[500px] w-full m-auto pt-4'>
-    <div>
-      <div>
-        <label htmlFor="email">Email</label>
-        <input id="email" type="text" value={session.user.email} disabled />
+    <div className='relative flex justify-between items-center max-w-[500px] w-full m-auto mt-2 pt-4'>
+    <div className='flex items-center flex-col'>
+      <div className='pb-4'>
+        <label htmlFor="email"></label>
+        <Input
+        labelLeft='User Email'
+        size='lg'
+        bordered
+        id="email"
+        type="text"
+        value={session.user.email}
+        disabled
+        />
       </div>
-      <div>
-        <label htmlFor="username">Username</label>
-        <input
+      <div className='pb-4'>
+        <label htmlFor="username"></label>
+        <Input
+          clearable
+          size='lg'
+          bordered
+          labelLeft='Username'
           id="username"
           type="text"
           value={username || ''}
           onChange={(e) => setUsername(e.target.value)}
         />
       </div>
-      <div>
-        <label htmlFor="website">Website</label>
-        <input
+      <div className='pb-4'>
+        <label htmlFor="website"></label>
+        <Input
+          clearable
+          size='lg'
+          bordered
+          labelLeft='Website'
           id="website"
-          type="website"
+          type="url"
           value={website || ''}
           onChange={(e) => setWebsite(e.target.value)}
         />
       </div>
 
-      <div>
-        <button
+      <div className='pb-4'>
+        <Button
+          ghost
+          bordered
+          shadow
+          size={'lg'}
           className="button primary block"
           onClick={() => updateProfile({ username, website, avatar_url })}
           disabled={loading}
         >
           {loading ? 'Loading ...' : 'Update'}
-        </button>
+        </Button>
       </div>
 
-      <div>
-        <button className="button block" onClick={() => supabase.auth.signOut()}>
+      <div className='pb-4'>
+        <Button
+        ghost
+        bordered
+        shadow
+        size={'lg'}
+        className="button block"
+        onClick={() => supabase.auth.signOut()}>
           Sign Out
-        </button>
+        </Button>
       </div>
     </div>
     </div>
