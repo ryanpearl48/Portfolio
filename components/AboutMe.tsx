@@ -1,5 +1,6 @@
-import React from 'react'
-import { Card, Text, Table } from '@nextui-org/react'
+import React from 'react';
+import { Card } from '@nextui-org/react';
+import { Image } from '@nextui-org/react';
 
 const AboutMe = () => {
   return (
@@ -12,6 +13,16 @@ const AboutMe = () => {
         bootcamp. Which, just like it sounds focuses on both front-end and back-end web development. It was a 20-week course and I met some really
         amazing people and created some projects I care for greatly. If you visit the "Projects" tab under "Settings", you can check those out.
       </Card.Body>
+      <Card.Divider></Card.Divider>
+      <Card.Footer>
+      <Image
+      width={50}
+      height={50}
+      src='../../public/github.png'
+      alt="Default Image"
+      objectFit="cover"
+    />
+      </Card.Footer>
     </Card>
   )
 }

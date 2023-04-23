@@ -6,7 +6,7 @@ export const metadata = {
 
 const Home = () => {
 
-  const MockItem = ({ text }: any) => {
+  const InnerText = ({ text }: any) => {
     return (
       <Card css={{ h: "$20", $$cardColor: '$colors$primary' }}>
         <Card.Body>
@@ -21,22 +21,22 @@ const Home = () => {
     <Grid.Container gap={1} className="w-100% justify-center align-middle">
       <Grid xl={5} className="min-w-lg">
         <Link href='/login'>
-          <MockItem text="Login" />
+          <InnerText text="Login" />
         </Link>
       </Grid>
       <Grid xl={5} className="min-w-lg">
         <Link href='about-me'>
-          <MockItem text="About Ryan" />
+          <InnerText text="About Ryan" />
         </Link>
       </Grid>
       <Grid xl={5} className="min-w-lg">
         <Link href='/portfolio'>
-          <MockItem text="Portfolio" />
+          <InnerText text="Portfolio" />
         </Link>
       </Grid>
       <Grid xl={5} className="max-w-xs">
         <Link href="/cards">
-          <MockItem text="Technology Used" />
+          <InnerText text="Technology Used" />
         </Link>
       </Grid>
     </Grid.Container>
