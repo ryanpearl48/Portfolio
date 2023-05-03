@@ -2,7 +2,7 @@ import { Link, Card, Table, Collapse } from '@nextui-org/react'
 
 export const metadata = {
   title: 'Portfolio',
-  description: 'Portfolio page for Ryan Pearl, showcasing multiple projects'
+  description: 'Portfolio page for Ryan Pearl, Software Engineer, showcasing multiple projects'
 }
 
 const Portfolio = () => {
