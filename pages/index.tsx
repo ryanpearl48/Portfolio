@@ -1,5 +1,6 @@
 import { Grid, Card, Text } from "@nextui-org/react";
 import Link from "next/link";
+
 export const metadata = {
   title: 'Home Page'
 }
