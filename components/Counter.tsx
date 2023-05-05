@@ -17,8 +17,8 @@ const Counter = () => {
       <Card>
        <Card.Header>Counter: {counter}</Card.Header>
        <Card.Body>
-         <button onClick={plusCounter}> + </button>
-         <button onClick={minusCounter}> - </button>
+         <button onClick={plusCounter}> ➕ </button>
+         <button onClick={minusCounter}> ➖ </button>
        </Card.Body>
       </Card>
     </div>
