@@ -105,20 +105,6 @@ export default function Account({ session }: { session: Session }) {
         />
       </div>
       <div className='pb-4'>
-        <label htmlFor="website"></label>
-        <Input
-          clearable
-          size='lg'
-          bordered
-          labelLeft='Website'
-          id="website"
-          type="url"
-          value={website || ''}
-          onChange={(e) => setWebsite(e.target.value)}
-        />
-      </div>
-
-      <div className='pb-4'>
         <Button
           ghost
           bordered
