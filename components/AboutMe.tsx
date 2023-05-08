@@ -15,13 +15,13 @@ const AboutMe = () => {
       </Card.Body>
       <Card.Divider></Card.Divider>
       <Card.Footer>
-      <Image
+      {/* <Image
       width={50}
       height={50}
       src='../../public/github.png'
       alt="Default Image"
       objectFit="cover"
-    />
+    /> */}
       </Card.Footer>
     </Card>
   )
