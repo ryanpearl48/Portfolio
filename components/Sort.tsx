@@ -21,6 +21,18 @@ const Sort = () => {
             <Dropdown.Item>A-Z</Dropdown.Item>
             <Dropdown.Item>Z-A</Dropdown.Item>
         </Dropdown>
+        <ul>
+          <li>A</li>
+          <li>B</li>
+          <li>C</li>
+          <li>D</li>
+          <li>E</li>
+          <li>F</li>
+          <li>G</li>
+          <li>H</li>
+          <li>I</li>
+          <li>J</li>
+        </ul>
        </Card.Body>
       </Card>
     </div>
