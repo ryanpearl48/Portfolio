@@ -8,7 +8,7 @@ import NextCard from "@/components/Cards/NextJS";
 export const metadata = {
   title: 'Cards',
   description: 'Different Technology Cards',
-}
+};
 
 const CardsPage = () => {
   return (
@@ -20,6 +20,6 @@ const CardsPage = () => {
       <TailwindCard />
     </div>
   )
-}
+};
 
 export default CardsPage;

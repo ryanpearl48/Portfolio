@@ -25,6 +25,6 @@ const AboutMe = () => {
       </Card.Footer>
     </Card>
   )
-}
+};
 
-export default AboutMe
+export default AboutMe;
