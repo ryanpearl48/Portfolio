@@ -4,7 +4,7 @@ import { Card, Dropdown } from "@nextui-org/react";
 const Sort = () => {
 
   const sortAz = () => {
-    
+
   };
 
   const sortZa = () => {
@@ -25,6 +25,6 @@ const Sort = () => {
       </Card>
     </div>
   )
-}
+};
 
 export default Sort;

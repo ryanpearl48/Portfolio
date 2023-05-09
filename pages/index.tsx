@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: 'Home Page'
-}
+};
 
 const Home = () => {
 
@@ -47,5 +47,6 @@ const Home = () => {
       </Grid>
     </Grid.Container>
   );
-}
-export default Home
+};
+
+export default Home;

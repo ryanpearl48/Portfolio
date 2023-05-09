@@ -1,15 +1,15 @@
-import { Auth } from '@supabase/auth-ui-react'
-import { ThemeSupa } from '@supabase/auth-ui-shared'
-import { useSession, useSupabaseClient } from '@supabase/auth-helpers-react'
-import Account from '../../components/Account'
+import { Auth } from '@supabase/auth-ui-react';
+import { ThemeSupa } from '@supabase/auth-ui-shared';
+import { useSession, useSupabaseClient } from '@supabase/auth-helpers-react';
+import Account from '../../components/Account';
 
 export const metadata = {
   title: 'Login Page'
-}
+};
 
 const Login = () => {
-  const session = useSession()
-  const supabase = useSupabaseClient()
+  const session = useSession();
+  const supabase = useSupabaseClient();
 
   return (
     <div className='w-full flex justify-center align-middle'>
@@ -25,6 +25,6 @@ const Login = () => {
       )}
     </div>
   )
-}
+};
 
 export default Login;

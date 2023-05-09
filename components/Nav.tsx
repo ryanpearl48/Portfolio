@@ -43,6 +43,6 @@ const Nav = () => {
     </Navbar>
   </div>
   )
-}
+};
 
-export default Nav
+export default Nav;

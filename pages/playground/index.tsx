@@ -1,12 +1,12 @@
-import Counter from '@/components/Counter'
-import React from 'react'
-import { Grid } from '@nextui-org/react'
-import Sort from '@/components/Sort'
+import Counter from '@/components/Counter';
+import React from 'react';
+import { Grid } from '@nextui-org/react';
+import Sort from '@/components/Sort';
 
 export const metadata = {
   title: 'Playground',
   description: 'Fun coding things for practice.'
-}
+};
 
 const Playground = () => {
   return (
@@ -20,6 +20,6 @@ const Playground = () => {
       </Grid>
     </Grid.Container>
   )
-}
+};
 
-export default Playground
+export default Playground;

@@ -99,6 +99,6 @@ const Portfolio = () => {
       </Collapse.Group>
     </div>
   )
-}
+};
 
 export default Portfolio;

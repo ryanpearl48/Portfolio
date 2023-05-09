@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import { useUser, useSupabaseClient, Session } from '@supabase/auth-helpers-react'
-import { Database } from '../types/supabase'
-import { Input, Button } from '@nextui-org/react'
-type Profiles = Database['public']['Tables']['profiles']['Row']
+import React, { useState, useEffect } from 'react';
+import { useUser, useSupabaseClient, Session } from '@supabase/auth-helpers-react';
+import { Database } from '../types/supabase';
+import { Input, Button } from '@nextui-org/react';
+type Profiles = Database['public']['Tables']['profiles']['Row'];
 
 export default function Account({ session }: { session: Session }) {
   const supabase = useSupabaseClient<Database>()
@@ -132,4 +132,4 @@ export default function Account({ session }: { session: Session }) {
     </div>
     </div>
   )
-}
+};
