@@ -6,7 +6,6 @@ export const metadata = {
 };
 
 const Home = () => {
-
   const InnerText = ({ text }: any) => {
     return (
       <Card css={{ h: "$20", $$cardColor: '$colors$primary' }}>

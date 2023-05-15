@@ -10,7 +10,6 @@ export const metadata = {
 const Login = () => {
   const session = useSession();
   const supabase = useSupabaseClient();
-
   return (
     <div className='w-full flex justify-center align-middle'>
       {!session ? (
