@@ -29,7 +29,6 @@ const Nav = () => {
               <Dropdown.Item textValue="Portfolio" withDivider key='portfolio'><Link href='/portfolio'>Portfolio</Link></Dropdown.Item>
               <Dropdown.Item textValue="Cards" key='card'><Link href='/cards'>Cards</Link></Dropdown.Item>
               <Dropdown.Item textValue="About Me" key='about-me'><Link href='/about-me'>About Me</Link></Dropdown.Item>
-              <Dropdown.Item textValue="Playground" key='playground'><Link href='/playground'>Playground</Link></Dropdown.Item>
               <Dropdown.Item textValue="Future Projects" key='future-projects'><Link href='/future-projects'>Future Projects</Link></Dropdown.Item>
             </Dropdown.Menu>
             </Dropdown>
