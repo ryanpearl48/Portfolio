@@ -39,11 +39,6 @@ const Home = () => {
           <InnerText text="Technology Used" />
         </Link>
       </Grid>
-      <Grid xl={5} className="max-w-xs">
-        <Link href="/playground">
-          <InnerText text="Playground" />
-        </Link>
-      </Grid>
     </Grid.Container>
   );
 };

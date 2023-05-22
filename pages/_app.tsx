@@ -16,7 +16,6 @@ const lightTheme = createTheme({
     },
   }
 })
-
 const darkTheme = createTheme({
   type: 'dark',
   theme: {

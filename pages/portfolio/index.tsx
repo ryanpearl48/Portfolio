@@ -88,7 +88,7 @@ const Portfolio = () => {
       </Table.Body>
     </Table>
         <Card.Body>This particular project is a mock e-commerce website. It utilizes Javascript, React, Sequelize, and some MUI.
-          We also incorportated stripe as a payment method option in this project. The majority of my responsibility was within authentication
+          We also incorportated Stripe as a payment method option in this project. The majority of my responsibility was within authentication
           and admin pages and rights.
         </Card.Body>
         <Link block underline isExternal href="https://vanityvans.onrender.com/">
