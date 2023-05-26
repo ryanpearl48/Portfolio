@@ -12,7 +12,7 @@ Portfolio Playground is a dynamic and interactive sandbox where I experiment wit
 ## 🚀 Getting Started
 To start using browing the Portfolio Playground, simply visit [Portfolio Playground](https://stackathon-five.vercel.app/).
 You may create an account if you'd like but it's just been added for fun!
-Some of the pages included are the tech cards, portfolio, playgorund page, and login.
+Some of the pages included are the Technology Cards, Portfolio, and Login/Sign-Up.
 ---
 ## 💡 Features
 * 🌙 Dark and light mode toggle for an optimal browsing experience
@@ -26,6 +26,7 @@ Some of the pages included are the tech cards, portfolio, playgorund page, and l
 | Technology Name | Link |
 |-----------------|------|
 | `Next.js` | https://nextjs.org |
+| `NextUI` | https://nextui.org |
 | `Supabase` | https://supabase.com |
 | `Typescript` | https://typescriptlang.com |
 | `Vercel` | https://vercel.com |
