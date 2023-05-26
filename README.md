@@ -15,10 +15,10 @@ You may create an account if you'd like but it's just been added for fun!
 Some of the pages included are the tech cards, portfolio, playgorund page, and login.
 ---
 ## 💡 Features
-🌙 Dark and light mode toggle for an optimal browsing experience
-📚 Interactive tech cards and project showcase
-🎮 Playground page for experimentation and learning
-🔐 Account creation and login functionality (just for fun!)
+* 🌙 Dark and light mode toggle for an optimal browsing experience
+* 📚 Interactive tech cards and project showcase
+* 🎮 Playground page for experimentation and learning
+* 🔐 Account creation and login functionality (just for fun!)
 ---
 ## 📸 Screenshots
 
