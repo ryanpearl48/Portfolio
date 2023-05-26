@@ -43,7 +43,7 @@ const Portfolio = () => {
            </Table.Body>
           </Table>
         <Card.Body>Myself and three teammates Ben Villafranca, Cody DiBella, and Jay Yuan created AI Cookbook
-          Which utilizes Next.js, Supabase, MaterialUI, and Spoonacular/OpenAI API's.
+          Which leverages Next.js, Supabase, MaterialUI, and Spoonacular/OpenAI API's.
           The main idea of the website is that you can take what ingredients you have around the house
           and you can input them into the search bar which will then have them added to your pantry.
           Once they're there they can get an AI generated recipe to utilize those previously inputed ingredients.
@@ -87,7 +87,7 @@ const Portfolio = () => {
         </Table.Row>
       </Table.Body>
     </Table>
-        <Card.Body>This particular project is a mock e-commerce website. It utilizes Javascript, React, Sequelize, and some MUI.
+        <Card.Body>This particular project is a mock e-commerce website. It utilizes Javascript, React, Sequelize, and MUI.
           We also incorportated Stripe as a payment method option in this project. The majority of my responsibility was within authentication
           and admin pages and rights.
         </Card.Body>

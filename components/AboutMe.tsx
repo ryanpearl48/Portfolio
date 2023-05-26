@@ -1,6 +1,6 @@
-import React from 'react';
+ import React from 'react';
 import { Card } from '@nextui-org/react';
-import { Image } from '@nextui-org/react';
+import Link from 'next/link';
 
 const AboutMe = () => {
   return (
@@ -8,10 +8,13 @@ const AboutMe = () => {
       <Card.Header>Ryan Pearl - Software Engineer</Card.Header>
       <Card.Divider></Card.Divider>
       <Card.Body>
-        When I was 19 I joined the United States Air Force, and after around 6 years of service I decided to move on from
-        being an Avionics Tech. and take a risk to attempt to be a Software Engineer! I've recently graduated from the Fullstack Academy coding
-        bootcamp. Which, just like it sounds focuses on both front-end and back-end web development. It was a 20-week course and I met some really
-        amazing people and created some projects I care for greatly. If you visit the "Projects" tab under "Settings", you can check those out.
+        <span><b>Thank you for visiting my Portfolio Website!</b></span>
+        <span>I'm a Junior Developer and graduate of the Fullstack Academy Software Engineering Bootcamp.</span>
+        <span>I'm also a Veteran of the United States Air Force! I separated as an E-5 (Staff Sergeant) and spent 6 years as an Avionics Technician.</span>
+        <span>I hope you enjoy the content provided and if you have any questions feel free to reach out!</span>
+        <Card.Divider></Card.Divider>
+      <Link href="https://linkedin.com/in/ryanpearl48" className=' cursor-pointer'>LinkedIn</Link>
+      <Link href="https://github.com/ryanpearl48" className=' cursor-pointer'>GitHub</Link>
       </Card.Body>
     </Card>
   )
