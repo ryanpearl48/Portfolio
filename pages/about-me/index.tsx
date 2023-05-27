@@ -7,7 +7,9 @@ export const metadata = {
 
 const AboutMePage = () => {
   return (
-    <AboutMe />
+    <div className="flex align-middle justify-center">
+      <AboutMe />
+    </div>
   )
 };
 
