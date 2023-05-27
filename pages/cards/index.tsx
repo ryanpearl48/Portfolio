@@ -12,7 +12,7 @@ export const metadata = {
 
 const CardsPage = () => {
   return (
-    <div className="flex my-4 space-x-7 flex-wrap justify-center flex-row pt-2">
+    <div className="flex my-4 space-x-7 flex-wrap justify-center flex-row pt-5 space-y-4">
       <NextCard />
       <TypescriptCard />
       <SupabaseCard />

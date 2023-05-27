@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app';
-import { NextUIProvider, createTheme, theme } from '@nextui-org/react';
+import { NextUIProvider, createTheme } from '@nextui-org/react';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
 import { createBrowserSupabaseClient } from '@supabase/auth-helpers-nextjs';
 import { SessionContextProvider, Session } from '@supabase/auth-helpers-react';
@@ -45,13 +45,8 @@ export default function App({ Component,
           dark: darkTheme.className
         }}
         >
-            <SessionContextProvider
-            supabaseClient={supabaseClient}
-            initialSession={pageProps.initialSession}
-            >
               <Nav/>
                 <Component {...pageProps} />
-            </SessionContextProvider>
         </NextThemesProvider>
        </NextUIProvider>
     )

@@ -21,11 +21,8 @@ const Nav = () => {
         </Navbar.Content>
         <Navbar.Content>
           <Dropdown>
-            <Dropdown.Button shadow>Options</Dropdown.Button>
+            <Dropdown.Button>Options</Dropdown.Button>
               <Dropdown.Menu aria-label="Static Actions">
-              {!session ?
-              <Dropdown.Item textValue="Login" key="login"><Link href="/login">Login</Link></Dropdown.Item>
-              : <Dropdown.Item textValue="My Profile" key="login"><Link href="/login">My Profile</Link></Dropdown.Item>}
               <Dropdown.Item textValue="Portfolio" withDivider key='portfolio'><Link href='/portfolio'>Portfolio</Link></Dropdown.Item>
               <Dropdown.Item textValue="Cards" key='card'><Link href='/cards'>Technology Cards</Link></Dropdown.Item>
               <Dropdown.Item textValue="About Me" key='about-me'><Link href='/about-me'>About Me</Link></Dropdown.Item>
