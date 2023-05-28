@@ -2,9 +2,8 @@ import { Link, Card, Table, Collapse } from '@nextui-org/react'
 
 const Portfolio = () => {
   return (
-    <div className='flex max-w-100vw justify-center m-auto pt-2'>
-      <Collapse.Group splitted>
-        <Collapse title='AI Cookbook' expanded shadow>
+    <div className='flex flex-wrap min-w-full justify-center pt-2'>
+        <Collapse title='AI Cookbook' shadow>
         <Card className='relative flex justify-between items-center max-w-[500px] w-full m-auto pt-4'>
           <Table
           aria-label="Example table with static content"
@@ -47,8 +46,7 @@ const Portfolio = () => {
         </Link>
       </Card>
     </Collapse>
-
-      <Collapse title='Vanity Vans' expanded shadow>
+      <Collapse title='Vanity Vans' shadow>
       <Card className='relative flex justify-between items-center max-w-[500px] w-full m-auto  mt-1 pt-4'>
         <Table
       aria-label="Example table with static content"
@@ -89,7 +87,6 @@ const Portfolio = () => {
         </Link>
       </Card>
       </Collapse>
-      </Collapse.Group>
     </div>
   )
 };
