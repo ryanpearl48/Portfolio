@@ -1,4 +1,5 @@
 import { Card, Text } from "@nextui-org/react";
+import Link from "next/link";
 
 export const metadata = {
   title: 'Home Page'
@@ -18,7 +19,7 @@ const Home = () => {
   };
   return (
     <>
-      <header className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
+      <header className="container flex items-center justify-center h-screen m-auto mb-12 bg-fixed bg-center bg-cover custom-img">
         <div className="p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">
           Welcome to my Portfolio Website!
         </div>
@@ -32,10 +33,25 @@ const Home = () => {
           </p>
         </div>
       <section
-            className="container flex items-center justify-center h-screen m-auto mb-12 bg-fixed bg-center bg-cover custom-img"
+            className="container flex items-center justify-center h-screen m-auto mb-12 bg-fixed bg-center bg-cover aicookbook"
           >
         <div className="p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">
-          Parralax inline
+          <Link target="_blank" href="https://aicookbook.app">AI Cookbook</Link>
+        </div>
+      </section>
+      <div className="max-w-lg m-auto">
+        <p className="mb-4">
+        </p>
+        <p className="mb-4">
+        </p>
+        <p className="mb-4">
+        </p>
+      </div>
+      <section
+            className="container flex items-center justify-center h-screen m-auto mb-12 bg-fixed bg-center bg-cover vanityvans"
+          >
+        <div className="p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">
+        <Link target="_blank" href="https://vanityvans.onrender.com/">Vanity Vans</Link>
         </div>
       </section>
       <div className="max-w-lg m-auto">
