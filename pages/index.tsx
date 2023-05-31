@@ -21,15 +21,11 @@ const Home = () => {
     <>
       <header className="container flex items-center justify-center h-screen m-auto mb-12 bg-fixed bg-center bg-cover custom-img">
         <div className="p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">
-          Welcome to my Portfolio Website!
+          Welcome to my Portfolio Website! Below is a list of Deployed Websites which also can be found in the "Portfolio" tab containing more info.
         </div>
       </header>
         <div className="max-w-lg m-auto">
           <p className="mb-4">
-          </p>
-          <p className="mb-4">
-          </p>
-          <p className="mb-12">
           </p>
         </div>
       <section
@@ -42,10 +38,6 @@ const Home = () => {
       <div className="max-w-lg m-auto">
         <p className="mb-4">
         </p>
-        <p className="mb-4">
-        </p>
-        <p className="mb-4">
-        </p>
       </div>
       <section
             className="container flex items-center justify-center h-screen m-auto mb-12 bg-fixed bg-center bg-cover vanityvans"
@@ -55,10 +47,6 @@ const Home = () => {
         </div>
       </section>
       <div className="max-w-lg m-auto">
-        <p className="mb-4">
-        </p>
-        <p className="mb-4">
-        </p>
         <p className="mb-4">
         </p>
       </div>
