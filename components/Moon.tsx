@@ -1,5 +1,14 @@
 import React from "react";
 
+type MoonIconProps = {
+  fill?: string,
+  filled?: boolean,
+  size?: number,
+  height?: number,
+  width?: number,
+  label?: string,
+};
+
 export const MoonIcon = ({
   fill = "currentColor",
   filled,
@@ -8,7 +17,7 @@ export const MoonIcon = ({
   width,
   label,
   ...props
-}) => {
+}: MoonIconProps ) => {
   if (filled) {
     return (
       <svg

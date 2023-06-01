@@ -1,5 +1,14 @@
 import React from "react";
 
+type SunIconProps = {
+  fill?: string,
+  filled?: boolean,
+  size?: number,
+  height?: number,
+  width?: number,
+  label?: string,
+};
+
 export const SunIcon = ({
   fill = "currentColor",
   filled,
@@ -8,7 +17,7 @@ export const SunIcon = ({
   width,
   label,
   ...props
-}) => {
+}: SunIconProps ) => {
   if (filled) {
     return (
       <svg
