@@ -7,18 +7,16 @@
 ![VS Code](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
 
 ## Introduction
-Portfolio Playground is a dynamic and interactive sandbox where I experiment with new technologies while showcasing my other projects. Explore the site to discover tech cards, a portfolio, a playground page, and even a login feature!
+Portfolio Playground is a dynamic and interactive sandbox where I experiment with new technologies while showcasing my other projects. Explore the site to discover tech cards, and a portfolio page.
 
 ## 🚀 Getting Started
 To start using browing the Portfolio Playground, simply visit [Portfolio Playground](https://stackathon-five.vercel.app/).
-You may create an account if you'd like but it's just been added for fun!
 Some of the pages included are the Technology Cards, Portfolio, and Login/Sign-Up.
 ---
 ## 💡 Features
 * 🌙 Dark and light mode toggle for an optimal browsing experience
 * 📚 Interactive tech cards and project showcase
 * 🎮 Playground page for experimentation and learning
-* 🔐 Account creation and login functionality (just for fun!)
 ---
 ## 📸 Screenshots
 
